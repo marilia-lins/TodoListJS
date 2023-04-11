@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background: linear-gradient(120deg, #6e2b83, #ac113f)
+    color: #ffff
+    font-family: 'VT323', monospace
+    min-height: 100vh
+    border: 3px dotted #ffffff
+
+
+    header
+        font-size: 2rem
+        min-height: 30vh
+        display: flex
+        justify-content: center
+        align-items: center
+
+        h1
+            padding: 10px
+            border: 2px dotted #ffffff
+
+        
+    form
+        min-height: 4vh
+        display: flex
+        justify-content: center
+        align-items: center
+
+        input
+            padding: 0.8rem
+            font-size: 1.5rem
+            border: none
+            border-top-left-radius: 3px
+            border-bottom-left-radius: 3px
+            background: #ffff
+            font-family: 'VT323', monospace
+            margin-bottom: 30px
+
+        button
+            padding: 0.8rem
+            font-size: 1.3rem
+            border: none
+            border-top-right-radius: 3px
+            border-bottom-right-radius: 3px
+            background: #ffff
+            color: #ac113f
+            cursor: pointer
+            transition: all 0.2s ease
+            margin-bottom: 30px
+
+            &:hover
+                background: #ac113f
+                color:#ffff
+
+.container
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .list
+        min-width: 30%
+        list-style: none
+
+        .task
+            margin: 0.5rem
+            background: #ffff
+            color: #000
+            font-size: 1.5rem
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-radius: 3px
+            transition: all 0.2s ease
+
+            .task-item
+                flex: 1
+                padding: 5px
+            
+            .btn-trash, .btn-check
+                background: #7d448f
+                color: #ffff
+                border: none
+                padding: 0.9rem
+                cursor: pointer
+                font-size: 0.8rem
+
+                .fas, .fa-check, .fa-trash
+                    pointer-events: none
+                
+            
+            .btn-trash
+                border-top-right-radius: 3px
+                border-bottom-right-radius: 3px
+            .btn-check
+                background: #51478a
+
+.check
+    font-style: italic 
+    opacity: 0.6
+    transition: all 0.5s ease
+
+.slide
+    filter: blur(1.5px)
+    transform: translateX(100%)
+    transition: all 0.5s ease
+
+
+

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(120deg, #6e2b83, #ac113f);
+  color: white;
+  font-family: "VT323", monospace;
+  min-height: 100vh;
+  border: 3px dotted #ffffff;
+}
+body header {
+  font-size: 2rem;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header h1 {
+  padding: 10px;
+  border: 2px dotted #ffffff;
+}
+body form {
+  min-height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body form input {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: white;
+  font-family: "VT323", monospace;
+  margin-bottom: 30px;
+}
+body form button {
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: white;
+  color: #ac113f;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 30px;
+}
+body form button:hover {
+  background: #ac113f;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .list {
+  min-width: 30%;
+  list-style: none;
+}
+.container .list .task {
+  margin: 0.5rem;
+  background: white;
+  color: #000;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+.container .list .task .task-item {
+  flex: 1;
+  padding: 5px;
+}
+.container .list .task .btn-trash, .container .list .task .btn-check {
+  background: #7d448f;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.container .list .task .btn-trash .fas, .container .list .task .btn-trash .fa-check, .container .list .task .btn-trash .fa-trash, .container .list .task .btn-check .fas, .container .list .task .btn-check .fa-check, .container .list .task .btn-check .fa-trash {
+  pointer-events: none;
+}
+.container .list .task .btn-trash {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.container .list .task .btn-check {
+  background: #51478a;
+}
+
+.check {
+  font-style: italic;
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+
+.slide {
+  filter: blur(1.5px);
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
